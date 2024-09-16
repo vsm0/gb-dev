@@ -1,6 +1,9 @@
 OUT = build/rom.gb
 
-OBJS := src/main.o
+OBJS := src/main.o \
+	assets/tiles.o \
+	assets/tilemap.o \
+	assets/paddle.o
 
 %.o: %.S
 	rgbasm -o $@ $<
@@ -16,4 +19,4 @@ clean: $(OUT)
 
 .PHONY: run
 run: $(OUT)
-	@cp $(OUT) /sdcard/Download/MyOldBoy
+	@mgba-sdl.exe.exe $(OUT)
