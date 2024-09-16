@@ -1,6 +1,6 @@
-SECTION "Header", ROM0
+SECTION "Paddle Asset", ROM0
 
-Paddle:
+Paddle::
 	dw `13333331
 	dw `30000003
 	dw `13333331
@@ -9,4 +9,4 @@ Paddle:
 	dw `00000000
 	dw `00000000
 	dw `00000000
-PaddleEnd:
+PaddleEnd::

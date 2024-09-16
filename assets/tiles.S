@@ -1,6 +1,6 @@
-SECTION "Header", ROM0
+SECTION "Tiles Asset", ROM0
 
-Tiles:
+Tiles::
 	dw `33333333
 	dw `33333333
 	dw `33333333
@@ -210,4 +210,4 @@ Tiles:
 	dw `33333333 
 	dw `33333333 
 	dw `33333333
-TilesEnd:
+TilesEnd::

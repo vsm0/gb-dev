@@ -6,7 +6,7 @@ OBJS := src/main.o \
 	assets/paddle.o
 
 %.o: %.S
-	rgbasm -o $@ $<
+	@rgbasm -o $@ $<
 
 $(OUT): $(OBJS)
 	@mkdir -p build
@@ -15,7 +15,7 @@ $(OUT): $(OBJS)
 
 .PHONY: clean
 clean: $(OUT)
-	rm -rf $(OUT) $(OBJS)
+	@rm -rf $(OUT) $(OBJS)
 
 .PHONY: run
 run: $(OUT)
